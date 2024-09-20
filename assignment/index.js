@@ -145,7 +145,7 @@ const result = document.getElementById('result')
 
       quizQuestions.forEach((q, index)=>{
          const selectedAnswer = document.querySelector(`input[name = "question-${index}"]:checked`)
-         if(selectedAnswer && selectedAnswer.value === q.correctAnswer){
+         if(selectedAnswer && selectedAnswer.value === String(q.correctAnswer)){
             score++
          }
       });
